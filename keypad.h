@@ -5,13 +5,13 @@
 
 #define LONG_PRESS_MS 1000
 
-#define KPD_LEFT 0x14
-#define KPD_MIDDLE 0x59
-#define KPD_RIGHT 0x11
+#define KPD_LEFT 0x14 			// P1 LEFT
+#define KPD_MIDDLE 0x59     	// P1 FIRE
+#define KPD_RIGHT 0x11      	// P1 RIGHT
 
-#define KPD_LONG_LEFT 0x16
-#define KPD_LONG_MIDDLE 0x26
-#define KPD_LONG_RIGHT 0x29
+#define KPD_LONG_LEFT 0x16  	// P1 START
+#define KPD_LONG_MIDDLE 0x26	// P1 COIN
+#define KPD_LONG_RIGHT 0x29 	// P1 PAUSE
 
 #include <Ticker.h>
 
