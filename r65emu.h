@@ -7,6 +7,7 @@
 #include "spiram.h"
 #include "prom.h"
 #include "ps2drv.h"
+#include "keypad.h"
 #include "tftdisplay.h"
 #include "keyboard.h"
 #include "serialio.h"

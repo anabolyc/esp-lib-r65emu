@@ -35,7 +35,8 @@ void ps2interrupt(void)
 	bitcount++;
 	if (bitcount == 11) {
 		uint8_t i = head + 1;		
-		if (i == KBD_BUFFER) i = 0;
+		if (i == KBD_BUFFER) 
+			i = 0;
 		if (i != tail) {
 			buffer[i] = incoming;
 			head = i;

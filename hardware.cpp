@@ -26,6 +26,11 @@ Memory memory;
 PS2Driver ps2;
 #endif
 
+#if defined(USE_KEYPAD)
+#include "keypad.h"
+Keypad kpd; 
+#endif
+
 static CPU *_cpu;
 
 bool hardware_reset() {
@@ -72,6 +77,10 @@ void hardware_init(CPU &cpu) {
 
 #if defined(USE_KBD)
 	ps2.begin(KBD_DATA, KBD_IRQ);
+#endif
+
+#if defined(USE_KEYPAD)
+	kpd.begin(PIN_BTN_L, PIN_BTN_M, PIN_BTN_R);
 #endif
 
 #if defined(TFT_BACKLIGHT)
